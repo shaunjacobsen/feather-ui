@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@import './reset';
+@import './variables';
+@import './typography';
+@import './components/Nav/nav';
+@import './components/Main/main';
+@import './components/Editor/editor';

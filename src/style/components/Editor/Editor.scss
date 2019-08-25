@@ -1,0 +1,49 @@
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    input {
+      border: none;
+      font-weight: 200;
+      font-size: 16px;
+      margin-bottom: 20px;
+      &.large {
+        font-size: 48px;
+      }
+      &.default {
+        color: lighten(black, 80%);
+      }
+    }
+  }
+  .post-options {
+    align-items: flex-start;
+    border: thin solid black;
+    display: flex;
+    margin: 0 -51px;
+    padding: 20px 51px;
+    .btn {
+      border: thin solid transparent;
+      padding: 20px 40px;
+      font-size: 24px;
+      &:not(:last-of-type) {
+        margin-right: 20px;
+      }
+      &.btn-primary {
+        font-weight: bold;
+        background-color: $yellow;
+        color: black;
+      }
+      &.btn-lg {
+        font-size: 36px;
+      }
+      &.btn-inverse {
+        background-color: transparent;
+        border: thin solid black;
+      }
+    }
+  }
+}
